@@ -4,6 +4,8 @@ import referral from "../../assets/svg/speaker-megaphone-svgrepo-com.svg";
 import wallet from "../../assets/svg/wallet-svgrepo-com.svg";
 import { useDispatch } from "react-redux";
 import { toggle } from "../../slices/menuSlice";
+import { NavbarLinks } from "../../data/navbar-links";
+import { Link, matchPath, useLocation } from "react-router-dom";
 
 export default function Navbar() {
 
@@ -12,6 +14,12 @@ export default function Navbar() {
   const menuHandler = () => {
     dispatch(toggle());
   };
+
+  const location = useLocation();
+
+  const matchRoute = (route) => {
+    return matchPath({ path: route }, location.pathname)
+  }
 
   return (
     <div className=" min-w-full z-10 bg-blue-600 h-20">
@@ -22,10 +30,27 @@ export default function Navbar() {
           />
         </div>
         <div>
-          <ul className="flex gap-4">
+          <ul className="flex gap-8 text-lg">
+            {
+              NavbarLinks.map((link, index) => (
+                <li key={index}>
+                  <Link to={link?.path}>
+                    <p
+                      className={`${
+                        matchRoute(link?.path)
+                          ? " text-white font-semibold hidden md:block"
+                          : "text-white hidden md:block"
+                      } hover:`}
+                    >
+                      {link.title}
+                    </p>
+                  </Link>
+                </li>
+              ))
+            }
+            {/* <li className="cursor-pointer">Masterclass</li>
             <li className="cursor-pointer">My Courses</li>
-            <li className="cursor-pointer">Masterclass</li>
-            <li className="cursor-pointer">Change Request</li>
+            <li className="cursor-pointer">Change Request</li> */}
           </ul>
         </div>
         <div className="flex gap-6 cursor-pointer">

@@ -16,22 +16,22 @@ export default function Login() {
       </header>
 
       <div className=" mx-[250px] ">
-        <div className=" flex md:flex-row gap-3 flex-col justify-center items-center">
+        <div className=" flex md:flex-row gap-3 flex-col items-center">
           <div className=" w-1/2">
             <div className="flex flex-col items-center flex-wrap">
               <div className="flex scroll-smooth transition-all overflow-x-hidden snap-x snap-mandatory image-slider">
-                <img
+                {/* <img
                   className=" w-fit snap-center image-wrapper"
                   src={loginImg1}
-                />
+                /> */}
                 <img
                   className=" w-fit snap-center image-wrapper"
                   src={loginImg2}
                 />
-                <img
+                {/* <img
                   className=" w-fit snap-center image-wrapper"
                   src={loginImg3}
-                />
+                /> */}
               </div>
               <div className=" w-full text-center font-semibold text-2xl mt-6 ">
                 Give Free English Fluency Test To know Where You Stand

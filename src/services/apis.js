@@ -5,7 +5,11 @@ export const endpoints = {
   CONTACT_US_API: BASE_URL + "/bx_block_contact/contact",
 }
 
+export const profileEndpoints = {
+  GET_USER_DETAILS_API: BASE_URL + "/bx_block_profile/profiles",
+}
+
 export const courseEndpoints = {
-  GET_ALL_COURSE_API: BASE_URL + "/bx_block_event/events",
-  COURSE_DETAILS_API: BASE_URL + "/bx_block_event/events",
+  GET_ALL_EVENTS_API: BASE_URL + "/bx_block_event/events",
+  EVENTS_DETAILS_API: BASE_URL + "/bx_block_event/events",
 }
