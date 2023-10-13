@@ -13,3 +13,8 @@ export const courseEndpoints = {
   GET_ALL_EVENTS_API: BASE_URL + "/bx_block_event/events",
   EVENTS_DETAILS_API: BASE_URL + "/bx_block_event/events",
 }
+
+export const testEndPoints = {
+  GET_ALL_TEST_API: BASE_URL + "/bx_block_test/tests",
+  GET_ALL_QUESTIONS_API: BASE_URL + "/bx_block_question/questions"
+}

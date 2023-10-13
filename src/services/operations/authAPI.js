@@ -46,6 +46,7 @@ export function logout(navigate) {
     localStorage.removeItem("token")
     localStorage.removeItem("account")
     localStorage.removeItem("courseId")
+    localStorage.removeItem("testId")
     toast.success("Logged Out")
     navigate("/login")
   }

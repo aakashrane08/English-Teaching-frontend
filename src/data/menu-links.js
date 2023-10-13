@@ -8,6 +8,10 @@ export const MenuLinks = [
     path: '/dashboard/courses',
   },
   {
+    title: "Question & Answer",
+    path: '/dashboard/QA',
+  },
+  {
     title: "My Request",
     path: "/dashboard/request",
   },

@@ -8,6 +8,10 @@ export const NavbarLinks = [
     path: '/dashboard/courses',
   },
   {
+    title: "Question & Answer",
+    path: '/dashboard/QA',
+  },
+  {
     title: "Change Request",
     path: "/dashboard/request",
   },

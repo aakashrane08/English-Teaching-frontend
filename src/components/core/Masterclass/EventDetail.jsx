@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { courseEndpoints } from "../../services/apis";
-import { apiConnector } from "../../services/apiconnector";
+import { courseEndpoints } from "../../../services/apis";
+import { apiConnector } from "../../../services/apiconnector";
 import { toast } from "react-hot-toast";
-import { setEventDetail } from "../../slices/courseSlice";
-import eventImg from "../../assets/images/eventDetail.jpg";
+import { setEventDetail } from "../../../slices/courseSlice";
+import eventImg from "../../../assets/images/eventDetail.jpg";
 
 export default function EventDetail() {
   const { eventDetail, courseId } = useSelector((state) => state.course);

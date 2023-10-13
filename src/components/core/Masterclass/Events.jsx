@@ -1,8 +1,8 @@
 import React from "react";
 import { BsBoxArrowUpRight } from "react-icons/bs";
-import tempImg from "../../assets/images/temp1.jpg";
+import tempImg from "../../../assets/images/temp1.jpg";
 import { useDispatch, useSelector } from "react-redux";
-import { setCourseId } from "../../slices/courseSlice";
+import { setCourseId } from "../../../slices/courseSlice";
 import { useNavigate } from "react-router-dom";
 
 export default function Events(props) {
